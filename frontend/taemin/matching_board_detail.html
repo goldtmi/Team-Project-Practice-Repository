@@ -1,0 +1,62 @@
+<!-- 페이지 5: 포스트잇 클릭시 글이 나오고 제목, 인원, 학과, 내용이 보이게 되고 사용자는 댓글을 달아서 매칭을 원한다고 표시할 수 있게 되는 페이지 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포스트잇 상세 페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="ham-btn">햄버거 버튼</div>
+        <div class="logo">로고</div>
+        <div class="welcome">000님 환영합니다</div>
+        <div class="logout-btn">로그아웃</div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <button class="sidebar-btn">MY</button>
+            <button class="sidebar-btn">내 정보</button>
+            <button class="sidebar-btn active">매칭 신청</button>
+            <button class="sidebar-btn">매칭 현황</button>
+        </div>
+
+        <div class="content">
+            <!-- 포스트잇 클릭시 나오는 상세 내용 -->
+            <div class="postit blue">
+                <h3>포스트잇 제목 1</h3>
+                <p>인원: 2명</p>
+                <p>학과: 공과대학 시스템경영공학부 산업경영공학전공</p>
+                <p>내용: 매칭 상세 내용 1...</p>
+                <button class="comment-btn">댓글 달기</button>
+            </div>
+
+            <!-- 상세 내용 보이는 부분 -->
+            <div class="details">
+                <h2>포스트잇 상세 정보</h2>
+                <h3>포스트잇 제목 1</h3>
+                <p>인원: 2명</p>
+                <p>학과: 공과대학 시스템경영공학부 산업경영공학전공</p>
+                <p>내용: 매칭 상세 내용 1...</p>
+                <!-- 댓글 창 -->
+                <h3>댓글</h3>
+                <div class="comments">
+                    <!-- 댓글 리스트 -->
+                    <div class="comment">
+                        <p>댓글 내용 1</p>
+                    </div>
+                    <div class="comment">
+                        <p>댓글 내용 2</p>
+                    </div>
+                    <!-- Add more comments as needed -->
+                </div>
+                <button class="apply-btn">매칭을 원한다고 표시하기</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="matching_board_detail.js" defer></script>
+</body>
+</html>

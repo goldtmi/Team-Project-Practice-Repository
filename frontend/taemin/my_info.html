@@ -1,0 +1,83 @@
+<!-- 페이지 6: 내 정보 확인 및 수정 페이지 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 정보</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="ham-btn">햄버거 버튼</div>
+        <div class="logo">로고</div>
+        <div class="welcome">000님 환영합니다</div>
+        <div class="logout-btn">로그아웃</div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <button class="sidebar-btn active">MY</button>
+            <button class="sidebar-btn">내 정보</button>
+            <button class="sidebar-btn">매칭 신청</button>
+            <button class="sidebar-btn">매칭 현황</button>
+        </div>
+
+        <div class="content">
+            <!-- 내 정보 확인 및 수정 -->
+            <h2>내 정보 확인 및 수정</h2>
+            <form>
+                <label for="studentID">학번 (ID):</label>
+                <input type="text" id="studentID" required disabled>
+                <br>
+
+                <label for="name">이름:</label>
+                <input type="text" id="name" required disabled>
+                <br>
+
+                <label>성별:</label>
+                <input type="radio" id="male" name="gender" value="male" disabled>
+                <label for="male">남자</label>
+                <input type="radio" id="female" name="gender" value="female" disabled>
+                <label for="female">여자</label>
+                <br>
+
+                <label for="residence">거주지:</label>
+                <select id="residence">
+                    <option value="남구">남구</option>
+                    <option value="북구">북구</option>
+                    <option value="강서구">강서구</option>
+                    <!-- 다른 구들도 추가 -->
+                </select>
+                <br>
+
+                <label for="age">나이:</label>
+                <select id="age">
+                    <option value="20">20세</option>
+                    <option value="21">21세</option>
+                    <!-- 다른 나이도 추가 -->
+                    <option value="29">29세</option>
+                </select>
+                <br>
+
+                <label for="department">단과대 & 소속학과:</label>
+                <select id="department">
+                    <option value="공과대학 시스템경영공학부 산업경영공학전공">공과대학 시스템경영공학부 산업경영공학전공</option>
+                    <!-- 다른 단과대 & 소속학과도 추가 -->
+                </select>
+                <br>
+
+                <label for="email">이메일:</label>
+                <input type="email" id="email" required pattern=".+@pknu\.ac\.kr" title="부경대학교 이메일로 입력해주세요 (예: example@pknu.ac.kr)" disabled>
+                <br>
+
+                <button type="button" class="edit-btn">수정</button>
+                <button type="button" class="save-btn">저장</button>
+                <button type="button" class="cancel-btn">취소</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="my_info.js" defer></script>
+</body>
+</html>
